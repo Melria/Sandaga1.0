@@ -1,0 +1,6 @@
+![capture4](https://github.com/Melria/Sandaga1.0/assets/127540628/36532a4f-00e2-45f3-996f-3e0f6b10af0b)
+![Capture3](https://github.com/Melria/Sandaga1.0/assets/127540628/13a8d056-b4b9-47e6-a6da-25c1bf605357)
+![capture2](https://github.com/Melria/Sandaga1.0/assets/127540628/a7ab267b-71d0-483a-8609-2d61dc33b0bd)
+![capture1](https://github.com/Melria/Sandaga1.0/assets/127540628/24b98c83-acf0-469c-92fd-058b9564e19f)
+![capture6](https://github.com/Melria/Sandaga1.0/assets/127540628/5c89cd79-08fc-480a-ae04-c51b33586d2e)
+![capture5](https://github.com/Melria/Sandaga1.0/assets/127540628/28ab6eef-9809-4c70-9261-670b6d163a9f)
