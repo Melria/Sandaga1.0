@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, Image, StyleSheet,lineHeight,TouchableOpacity } from 'react-native';
+import React, {useState} from 'react';
+import { View, Text, Image, StyleSheet,lineHeight,TouchableOpacity,Button } from 'react-native';
 
 import leftArrow1 from "../assets/leftArrow1.png";
 import lock from "../assets/lock.png";
@@ -8,6 +8,16 @@ import broccoli from '../assets/broccoli.jpeg';
 import carrot from '../assets/carrot.jpeg';
 
 const Add = ({navigation}) => {
+    const [count, SetCount] = useState(0);
+    const handlerCount= () => {
+        SetCount(count - 1)
+        if(count == 0){
+            SetCount(0);
+        }
+    }
+    const handlerCount1= () => {
+        SetCount(count + 1)
+    }
     return (
         <View style={styles.container}>
                 <View style={styles.head}>
@@ -32,9 +42,9 @@ const Add = ({navigation}) => {
                         <Text style={{color:'grey'}}>approx 100 gm</Text>
                     </View>
                     <View style={styles.qty}>
-                        <View style={{borderWidth:1,borderColor:'green',padding:1,alignItems:'center',borderRadius:5,height:35,width:35,marginTop:5}}><Text style={{fontSize:28,marginTop:-5,color:'green'}}>-</Text></View>
-                        <Text style={{fontSize:16,marginTop:10}}>1</Text>
-                        <View style={{borderWidth:1,borderColor:'green',padding:1,alignItems:'center',borderRadius:5,height:35,width:35,marginTop:5}}><Text  style={{fontSize:28,marginTop:-5,color:'green'}}>+</Text></View>
+                         <View style={{borderWidth:1,borderColor:'green',padding:1,alignItems:'center',borderRadius:5,height:35,width:35,marginTop:5}}><Button  title="-" style={{fontSize:28,marginTop:-5,color:'red'}} onPress={handlerCount}/></View>
+                        <Text style={{fontSize:16,marginTop:10}}>{count}</Text>
+                        <View style={{borderWidth:1,borderColor:'green',padding:1,alignItems:'center',borderRadius:5,height:35,width:35,marginTop:5}}><Button title="+" style={{fontSize:28,marginTop:-5,color:'green'}} onPress={handlerCount1}/></View>
                     </View>
                 </View>
                 <View style={{width:'80%',borderWidth:1,borderColor:'gray',position:'relative',bottom:-50}}></View>

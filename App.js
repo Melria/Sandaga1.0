@@ -13,7 +13,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createStackNavigator } from "@react-navigation/stack";
 import menu from "./assets/menu.png";
 import profile from "./ressources/profile.png";
-import Profile4 from "./Screen/ProfileScreen4"
+import homeScreen2 from "./Screen/homeScreen2"
 
 const Tab = createBottomTabNavigator();
  const stack =createStackNavigator(); 
@@ -76,7 +76,7 @@ function Navigation(){
 
         <Tab.Screen
           name="search"
-          component={Profile4}
+          component={homeScreen2 }
           options={{
             headerShown: false,
             tabBarLabel: ({ focused, color }) => {
